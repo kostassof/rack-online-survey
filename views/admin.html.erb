@@ -1,0 +1,9 @@
+<div class="container">
+  <h2>Total replies: <%= @total_replies %></h2>
+  <%= pie_chart({"Yes" => @positive_negative_replies_count[:yes], "No" => @positive_negative_replies_count[:no]}) %>
+</div>
+
+<div class="container">
+  <h2>Replies</h2>
+  <%= column_chart @replies, stacked: true %>
+</div>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+  <html lang="en" data-ember-extension="1">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Online survey</title>
+
+    <!-- Minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Chartkick -->
+    <script src="views/js/highcharts.js"></script>
+    <script src="views/js/chartkick.js"></script>
+
+    <style>
+      #cnt1 {
+          background-color: rgba(215, 212, 212, 0.88);
+          margin-top: 70px;
+          margin-bottom: 70px;
+      }
+
+      #panel1 {
+          padding:20px;
+      }
+
+      .panel-body:not(.two-col) {
+          padding: 0px;
+      }
+
+      .panel-body .radio, .panel-body .checkbox {
+          margin-top: 0px;
+          margin-bottom: 0px;
+      }
+
+      .panel-body .list-group {
+          margin-bottom: 0;
+      }
+
+      .margin-bottom-none {
+          margin-bottom: 0;
+      }
+
+      #cnt1 {
+        margin-top: 70px;
+      }
+
+      h2 {
+        width: 100%;
+        text-align:center;
+      }
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 500px;
+        height: 500px;
+        margin-top: -250px; /* Half the height */
+        margin-left: -250px; /* Half the width */
+      }
+    </style>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
